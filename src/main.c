@@ -38,9 +38,15 @@ int main ()
   for (int i = 0; i < n; i++) {
     max_digits_sum = max(max_digits_sum, digits_sum(arr[i]));
   }
-
-  printf("Max digits sum: %d\n", max_digits_sum);
   
-	printf ("Hello World\n");
-	printf ("Goodbye World\n");
+  printf("Max digits sum: %d\n", max_digits_sum);
+
+  printf("Selected number:\n");
+  for (int i = 0; i < n; i++){
+    if (digits_sum(arr[i]) == max_digits_sum) {
+      printf("%d ", arr[i]);
+    }
+  }	
+  printf("\n");
+  free(arr);
 }
