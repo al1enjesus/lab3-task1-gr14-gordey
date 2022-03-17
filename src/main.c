@@ -4,9 +4,12 @@
 
 
 int digits_sum(int element) {
+  element < 0 ? element *= -1: element;
+  
   char str[80];
   sprintf(str, "%d", element);
-
+     
+  
   int sum_digits = 0;
   for (int i = 0; str[i] != '\0'; i++){
     sum_digits += str[i] - '0';
@@ -23,12 +26,12 @@ int max(int num1, int num2)
 int main ()
 {
 
-  int n = 10;
-  int* arr = (int*) malloc(sizeof(int) * n);
-
+  int n = 5;
+  int arr[5] = {11, -51, 15, 33, -11};
+  
   printf("ARRAY:\n[");
   for (int i = 0; i < n; i++) {
-    arr[i] = rand();
+    // arr[i] = rand();
     printf("%d", arr[i]);
     if (i != n - 1) printf(", ");
     else printf("]\n");
@@ -48,5 +51,5 @@ int main ()
     }
   }	
   printf("\n");
-  free(arr);
+  
 }
