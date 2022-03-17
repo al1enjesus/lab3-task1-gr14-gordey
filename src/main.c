@@ -41,7 +41,7 @@ int main ()
   
   printf("Max digits sum: %d\n", max_digits_sum);
 
-  printf("Selected number:\n");
+  printf("Selected numbers:\n");
   for (int i = 0; i < n; i++){
     if (digits_sum(arr[i]) == max_digits_sum) {
       printf("%d ", arr[i]);
