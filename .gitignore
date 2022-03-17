@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# Builded file
+lab3-1
+
 # Object files
 *.o
 *.ko
